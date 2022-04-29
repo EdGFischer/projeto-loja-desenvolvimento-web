@@ -1,0 +1,45 @@
+/* Configuração */
+:root {
+    --color-primary: #1a1f1e;
+    --color-secundary: #6cbdb5;
+    --color-terciary: #93ccc6;
+    --color-quaternary: #c8d6bf;
+    --color-quiternary: #e3dfba;
+}
+
+
+body {
+    background-color: var(--color-quiternary);
+    color: var(--color-primary);
+}
+
+/* Topo */
+
+nav {
+    background-color: var(--color-terciary);
+}
+
+/* Filtro Estoque */
+
+.bloco-filtro-estoque{
+    background-color: var(--color-terciary);
+}
+
+/* Card -*/
+
+.card {
+    border-radius: 15px;
+    color: var(--color-primary);
+}
+
+.card img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-quiternary);
+
+}
