@@ -13,6 +13,7 @@
     <script src="js/script.min.js"></script>
 
     <script src="https://kit.fontawesome.com/7fd336d5ad.js" crossorigin="anonymous"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    
 </head>
 
