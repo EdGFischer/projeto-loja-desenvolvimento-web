@@ -4,8 +4,11 @@
     <section class="container d-flex flex-row justify-content-between align-items-center">
         <div>LOGO DA EMPRESA</div>
         <div class="d-flex flex-row align-items-center justify-items-center">
-            <div class="mx-3">
+            <div class="mx-3 d-flex text-center flex-column">
                 <i class="fa-solid fa-cart-arrow-down fa-2x"></i>
+                <div id="idHiddenCarrinho" style="display:none;">
+                <span>Valor Carrinho:</span><span id="valor-carrinho">0</span>
+                </div>
             </div>
             <div class="mx-3">
                 <button type="button" class="botaoCliente" data-bs-toggle="modal" data-bs-target="#exampleModal">

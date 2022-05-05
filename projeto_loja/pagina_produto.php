@@ -32,11 +32,7 @@ require_once('topo.php');
 
 
     </section>
-    <footer class="p-1 mt-4 shadow">
-        <div class="container text-center">
-            <i class="fa-solid fa-copyright"></i> 2022 - Todos os direitos reservados
-        </div>
-    </footer>
+
 
     <script>
         /*SE ADICIONAR O VALOR DO PRODUTO COM CENTAVOS VAI QUEBRAR O CODIGO*/
@@ -48,6 +44,7 @@ require_once('topo.php');
         var totalCarrinho = 0;
         var vezes = 0;
         function adicionar1() {
+            document.getElementById("idHiddenCarrinho").style.display="block"
             estoque = estoque - 1;
 
             if (document.getElementById("estoque-mercadoria").innerText = "Produto sem estoque") {
