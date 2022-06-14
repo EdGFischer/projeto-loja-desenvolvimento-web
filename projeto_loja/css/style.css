@@ -1,10 +1,10 @@
 /* Configuração */
 :root {
     --color-primary: #1a1f1e;
-    --color-secundary: #6cbdb5;
-    --color-terciary: #93ccc6;
-    --color-quaternary: #c8d6bf;
-    --color-quiternary: #e3dfba;
+    --color-secundary: #65727a;
+    --color-terciary: #bec3bc;
+    --color-quaternary: #d7dacf;
+    --color-quiternary: #e6e8e3;
 }
 
 @font-face {
@@ -30,19 +30,27 @@ body {
 nav {
     background-color: var(--color-terciary);
 }
+.botaoProduto{
+    background-color: transparent;
+    border-color: transparent;
+}
 
 .botaoCliente{
     background-color: transparent;
     border-color: transparent;
 }
+.botaoProduto{
+    background-color: transparent;
+    border-color: transparent;
+}
 .botoesCadastro{
-    background-color: lightblue;
-    border-color: lightblue;
-    font-size: 23px;
+    background-color: var(--color-terciary);
+    color: var(--color-primary);
+    font-size: 16px;
     display: block;
     border: 0px;
-    padding: 20px;
-    border-radius: 50%;
+    padding: 5px 20px;
+    border-radius: 10px;
 }
 .username {
     width:50%;
@@ -68,14 +76,25 @@ nav {
 }
 .botaoLogarCadastrar{
     transition:0.4s;
-    background-color: lightblue;
-    color:black;
+    background-color: var(--color-primary);
+    color:var(--color-terciary);
+    padding: 5px 20px;
 }
 .botaoLogarCadastrar:hover{
-    background-color: lightblue;
+    background-color: var(--color-primary);
     opacity: 0.8;
-    color:black;
+    color:var(--color-terciary);
     border:2px solid black;
+}
+
+
+.link-area-adm {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.link-area-adm:hover {
+    color: var(--color-secundary);
 }
 
 
@@ -158,11 +177,31 @@ nav {
 }
 
 .botao-detalhes-produto:hover,
-.botao-detalhes-produto:active {
+.botao-detalhes-produto:active,
+.botao-detalhes-produto:focus {
     transition: all 0.5s;
     background-color: var(--color-quiternary);
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
+}
+
+.link-produto {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.link-produto:hover {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+/* Página produto */
+
+.bloco-produto{
+    border-radius: 15px;
+    color: var(--color-primary);
+    background-color: #ffffff;
+
 }
 
 /* Rodapé */
