@@ -6,7 +6,7 @@ require_once('topo.php');
     <section class="container">
         <div class="col-xxl-12">
             <div class="text-center text-uppercase m-5">
-                <h3>Mercadorias em Estoque</h3>
+                <h3>Mercadorias em Estoques</h3>
             </div>
         </div>
 

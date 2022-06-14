@@ -2,7 +2,7 @@
 
 <nav class="shadow p-2">
     <section class="container d-flex flex-row justify-content-between align-items-center">
-        <div>LOGO DA EMPRESA</div>
+        <div>IMAGEM LOGO DA EMPRESA</div>
         <div class="d-flex flex-row align-items-center justify-items-center">
             <div class="mx-3 d-flex text-center flex-column">
                 <i class="fa-solid fa-cart-arrow-down fa-2x"></i>
