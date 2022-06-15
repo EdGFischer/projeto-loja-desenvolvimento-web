@@ -1,7 +1,5 @@
 <?php 
 
-
-
 Class Produto
 {
     private $conexao;
@@ -21,4 +19,3 @@ Class Produto
         return $produtos;
     }
 }
-.
