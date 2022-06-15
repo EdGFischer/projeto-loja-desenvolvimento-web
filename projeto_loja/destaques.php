@@ -2,7 +2,7 @@
 
 require_once 'classes.php';
 
-$queryProduto = new Produto($conexao);
+
 ?>
 
 <section class="container">
