@@ -1,15 +1,8 @@
 <?php 
 
-
-
 Class Produto
 {
-    private $conexao;
-    
-    public function __construct(mysqli $conexao)
-    {
-        $this->conexao = $conexao;
-    }
+
     public function exibirNoEstoque(int $id): array
     {   
         $selecionaProduto = $this->conexao->prepare("SELECT * FROM 'tbl_produto' WHERE id = ?");
@@ -20,4 +13,5 @@ Class Produto
 
         return $produtos;
     }
+    
 }
