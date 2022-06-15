@@ -11,6 +11,7 @@ Class Produto
         $selecionaProduto->execute();
         $produtos = $selecionaProduto->get_result()->fetch_assoc();
 
+        echo "oi";
         return $produtos;
     }
     
