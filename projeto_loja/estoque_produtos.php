@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conexao.php';
+require_once 'classes.php';
 require_once 'config.php';
 
 $queryProduto = new Produto($conexao);
