@@ -1,18 +1,26 @@
 <?php
-$usuario = "root";
-$senha = "";
-$conexao = new mysqli('localhost',$usuario,$senha, 'junintec');
-$conexao->set_charset('utf8');
 
+define('HOST','localhost');
+define('DATABASENAME','junintec');
+define('USER','root');
+define('PASSWORD','');
 
+class Conexao 
+{
+    protected $conexao;
 
-if ($conexao) {
-    echo'';
-}else{
-    echo'ERRO NO BANCO';
+    function __construct()
+    {
+        echo 'oi';
+        $this->conectaBanco();
+    }
+    
+    function conectaBanco()
+    {
+        try {
+            $this->conectaBanco = new PDO('mysql:host='.HOST.';dbname'.DATABASENAME, USER, PASSWORD);
+        } catch (PDOException $e) {
+            echo "Erro";
+        }
+    }
 }
-
-
-$query = "SELECT * FROM tbl_produto"; // sql para execução
-$result = $conexao->query($query); // executa query
-$result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
