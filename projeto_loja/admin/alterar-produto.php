@@ -7,7 +7,7 @@ $id = $_GET['id'];
 
 $query = "SELECT * FROM teste WHERE id = $id"; // sql para execução
 $result = $conexao->query($query); // executa query
-$result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
+$result = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <section class="d-flex flex-column align-items-center justify-content-center w-100" style="height: 100vh;">

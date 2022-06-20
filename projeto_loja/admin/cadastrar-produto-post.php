@@ -10,5 +10,5 @@ $descricao = $_POST['descricao'];
 $query = "INSERT INTO teste (nome, categoria, cor, preco, descricao) values ('$nome', '$categoria', '$cor', '$preco', '$descricao')"; // sql para execução
 $result = $conexao->query($query); // executa query
 
-header("Location: ./index.php"); // redireciona para categoria.php;
+header("Location: ./index.php");
 
