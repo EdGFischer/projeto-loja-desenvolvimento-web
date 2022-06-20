@@ -4,14 +4,12 @@ require_once('topo.php');
 require_once('classes.php');
 
 $id = $_GET['id'];
-print_r($id);
 
 
 $query = "SELECT * FROM tbl_produto WHERE id = $id"; // sql para execução
 $result = $conexao->query($query); // executa query
 $result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
 
-print_r($result);
 
 ?>
 

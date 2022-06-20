@@ -2,6 +2,10 @@
 
 require_once 'classes.php';
 
+// query do destaque
+$query = "SELECT * FROM tbl_produto"; // sql para execução
+$result = $conexao->query($query); // executa query
+$result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
 
 ?>
 
