@@ -12,7 +12,6 @@
                 </button>
                 <div class="collapse" id="home-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li class="my-2"><a href="cadastrar-categoria.php" class="link-light rounded">Cadastrar Categoria</a></li>
                         <li class="my-2"><a href="cadastrar-produto.php" class="link-light rounded">Cadastrar Produto</a></li>
                         <li class="my-2"><a href="modificar-produto.php" class="link-light rounded">Modificar Produto</a></li>
                     </ul>

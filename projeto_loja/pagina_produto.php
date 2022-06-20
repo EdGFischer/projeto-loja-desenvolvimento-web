@@ -6,7 +6,7 @@ require_once('conexao.php');
 $id = $_GET['id'];
 
 
-$query = "SELECT * FROM tbl_produto WHERE id = $id"; // sql para execução
+$query = "SELECT * FROM teste WHERE id = $id"; // sql para execução
 $result = $conexao->query($query); // executa query
 $result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
 

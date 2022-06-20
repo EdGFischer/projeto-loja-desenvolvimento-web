@@ -3,7 +3,7 @@ require_once('head.php');
 require_once('topo.php');
 require_once('conexao.php');
 
-$query = "SELECT * FROM tbl_produto"; // sql para execução
+$query = "SELECT * FROM teste"; // sql para execução
 $result = $conexao->query($query); // executa query
 $result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
 
