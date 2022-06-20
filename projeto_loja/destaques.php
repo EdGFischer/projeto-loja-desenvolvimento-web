@@ -60,7 +60,7 @@ $result = $result->fetch_all(MYSQLI_ASSOC);
         <div class="p-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
             <a class="link-produto" href="pagina_produto.php?id=<?php echo $linha['id'];?>">
                 <div class="card shadow">
-                    <img src="img/nokia.png" class="card-img-top" alt="...">
+                    <img src="img/nokia.png" class="card-img-top" alt="<?= $nomeProduto ?>">
                     <div class="card-body">
                         <h5 class="card-title text-center mb-2"><?php echo $nomeProduto ?></h5>
                         <div class="my-1 d-flex flex-direction justify-items-center align-content-center">
@@ -76,7 +76,7 @@ $result = $result->fetch_all(MYSQLI_ASSOC);
                         <div class="my-1 d-flex flex-direction justify-items-center align-content-center">
                             <div class="bloco-icone-card d-flex flex-column align-items-center justify-content-center">
                                 <i class="fa-solid fa-money-bill"></i></div>
-                            <p class="card-text"><?php echo $precoProduto ?> R$</p>
+                            <p class="card-text">R$: <?php echo $precoProduto ?></p>
                         </div>
 
                         <a href="#" class="botao-detalhes-produto btn btn-primary">Detalhes</a>
