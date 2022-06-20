@@ -1,7 +1,7 @@
 <?php
 require_once('head.php');
 require_once('topo.php');
-require_once('classes.php');
+require_once('conexao.php');
 
 $id = $_GET['id'];
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'classes.php';
+require_once 'conexao.php';
 
 // query do destaque
 $query = "SELECT * FROM tbl_produto"; // sql para execução
