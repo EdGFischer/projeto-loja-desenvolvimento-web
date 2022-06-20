@@ -2,6 +2,17 @@
 require_once('head.php');
 require_once('topo.php');
 require_once('classes.php');
+
+$id = $_GET['id'];
+print_r($id);
+
+
+$query = "SELECT * FROM tbl_produto WHERE id = $id"; // sql para execução
+$result = $conexao->query($query); // executa query
+$result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
+
+print_r($result);
+
 ?>
 
 <section class="container">
@@ -19,8 +30,8 @@ require_once('classes.php');
                 <img src="img/nokia.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <!--CARACTERISTICAS PRODUTO-->
-                    <h5 class="card-title text-center">Ready Stock Nokia 3310</h5>
-                    <p class="card-text">Valor: R$<span id="valor-mercadoria">200</span></p>
+                    <h5 class="card-title text-center"><?= $result[0]['nome'] ?></h5>
+                    <p class="card-text">Valor: R$<span id="valor-mercadoria"><?= $result[0]['preco'] ?></span></p>
                     <p class="card-text" id="emEstoque">Em Estoque <span id="estoque-mercadoria">10</span></p>
                     <p id="produtoesgotado" style="display:none"><b>PRODUTO ESGOTADO</b></p>
                     <button class="btn btn-primary" id="botao-produto" onclick="adicionar1()">Adicionar Carrinho</button>
@@ -30,10 +41,9 @@ require_once('classes.php');
 
         <div class="p-3 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="bloco-produto shadow card-body">
-                <p><b>Categoria:</b> Celular</p>
-                <p><b>Marca:</b> Nokia</b></p>
-                <p><b>Cor:</b> Azul</p>
-                <p><b>Descrição:</b><br></p>
+                <p><b>Categoria:</b><?= $result[0]['categoria'] ?></p>
+                <p><b>Cor:</b> <?= $result[0]['cor'] ?></p>
+                <p><b>Descrição:</b><?= $result[0]['descricao'] ?><br></p>
             </div>
         </div>
 
