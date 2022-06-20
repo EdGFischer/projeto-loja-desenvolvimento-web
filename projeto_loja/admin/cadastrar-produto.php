@@ -21,24 +21,12 @@ require_once('topo.php');
                     </select>
                     <label class="text">Categoria</label>
                 </div>
-                <div class="d-flex flex-column-reverse mt-1">
-                    <select name="categoria">
-                        <option disabled selected value>--- selecione uma marca ---- </option>
-                        <option value="valor1">Iphone</option>
-                        <option value="valor2">Motorola</option>
-                        <option value="valor3">Nokia</option>
-                        <option value="valor4">Samsung</option>
-                    </select>
-                    <label class="text">Marca</label>
-                </div>
+
                 <div class="d-flex flex-column-reverse mt-1">
                     <input class=" text-center" type="text" name="" required="">
                     <label class="text">Cor</label>
                 </div>
-                <div class="d-flex flex-column-reverse mt-1">
-                    <input class="text-center" type="number" name="" required="">
-                    <label class="text">Quantidade disponível</label>
-                </div>
+
                 <div class="d-flex flex-column-reverse mt-1">
                     <input class="text-center" type="number" name="" required="">
                     <label class="text">Preço Unitário</label>
