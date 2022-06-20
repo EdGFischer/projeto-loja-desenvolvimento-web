@@ -9,8 +9,8 @@ require_once('topo.php');
             <h5 class="card-title text-center text-light txt-uppercase mb-3">Cadastro Produto</h5>
             <form class="mb-5 text-center" action="cadastrar-produto-post.php" method="post">
                 <div class="username d-flex flex-column-reverse ">
-                    <label class="username">Nome Aparalho</label>
                     <input class="inputUsername" type="text" name="nome" required="" value=>
+                    <label class="username">Nome Aparalho</label>
                 </div>
                 <div class="d-flex flex-column-reverse mt-1">
                     <input type="text" name="categoria" required="">
