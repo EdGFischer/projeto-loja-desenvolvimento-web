@@ -7,42 +7,37 @@ require_once('topo.php');
     <div class="card" style="width: 25rem;">
         <div class="card-body rounded bg-dark">
             <h5 class="card-title text-center text-light txt-uppercase mb-3">Cadastro Produto</h5>
-            <form class="mb-5 text-center" action="cadastroProduto.php" method="post">
+            <form class="mb-5 text-center" action="cadastrar-produto-post.php" method="post">
                 <div class="username d-flex flex-column-reverse ">
-                    <input class="inputUsername" type="text" name="" required="">
                     <label class="username">Nome Aparalho</label>
+                    <input class="inputUsername" type="text" name="nome" required="" value=>
                 </div>
                 <div class="d-flex flex-column-reverse mt-1">
-                    <select name="categoria">
-                        <option disabled selected value>--- selecione uma categoria ---- </option>
-                        <option value="valor1">Smartphone</option>
-                        <option value="valor2">Tablet</option>
-                        <option value="valor3">Notbook</option>
-                    </select>
+                    <input type="text" name="categoria" required="">
                     <label class="text">Categoria</label>
                 </div>
 
                 <div class="d-flex flex-column-reverse mt-1">
-                    <input class=" text-center" type="text" name="" required="">
+                    <input class=" text-center" type="text" name="cor" required="">
                     <label class="text">Cor</label>
                 </div>
 
                 <div class="d-flex flex-column-reverse mt-1">
-                    <input class="text-center" type="number" name="" required="">
+                    <input class="text-center" type="number" name="preco" required="">
                     <label class="text">Preço Unitário</label>
                 </div>
                 <div class="d-flex flex-column-reverse mt-1">
-                    <textarea class="text-center" style="min-height: 100px;" type="file" name="" required=""></textarea>
+                    <textarea class="text-center" style="min-height: 100px;" type="file" name="descricao" required=""></textarea>
                     <label class="text">Descrição Produto</label>
                 </div>
-                <div class="d-flex flex-column-reverse mt-1">
+                <!-- <div class="d-flex flex-column-reverse mt-1">
                     <input class="text-center" type="file" name="" required="">
                     <label class="text">Imagem</label>
-                </div>
+                </div> -->
 
-                <button style="display:none;" id="botaoCadastrar" type="button" class="btn btn-secondary botaoLogarCadastrar" data-bs-dismiss="modal">Cadastrar</button>
+                <!-- <button style="display:none;" id="botaoCadastrar" type="submit" class="btn btn-secondary botaoLogarCadastrar" data-bs-dismiss="modal">Cadastrar</button> -->
+                <button type="submit" class="btn btn-light">Cadastrar</button>
             </form>
-            <button type="" class="btn btn-light">Cadastrar</button>
         </div>
     </div>
 

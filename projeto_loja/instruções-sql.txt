@@ -2,6 +2,7 @@ CREATE TABLE teste (
     id int AUTO_INCREMENT,
     nome varchar(30) not null,
     categoria varchar(30),
+    cor varchar(30),
     preco float,
     descricao varchar(200),
     primary key(id)

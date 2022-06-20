@@ -17,7 +17,7 @@ $result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
 
             <form class="needs-validation" action="alterar-produto-post.php?id=<?= $id ?>" method="post" novalidate>
             <div class="mb-3">
-              <label for="endereco">Nome da categoria</label>
+              <label for="endereco">Nome da nome</label>
               <input type="text" class="form-control" value="<?php echo $result[0]['nome']; ?>" id="nome" name="nome" placeholder="Nome da categoria" required autofocus>
               <div class="invalid-feedback">
                 Por favor, insira o nome da categoria.
