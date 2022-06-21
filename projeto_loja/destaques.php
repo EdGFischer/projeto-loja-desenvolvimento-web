@@ -30,7 +30,7 @@ $result = $result->fetch_all(MYSQLI_ASSOC);
                 <select class="form-select" id="filtro_cor">
                     <option selected>Cor...</option>
                     <?php foreach($result as $linha){ ?>
-                        <option value="<?=$liha['id']?>"><?=$linha['cor']?></option>
+                        <option value="<?=$linha['id']?>"><?=$linha['cor']?></option>
                     <?php } ?>
                 </select>
             </div>
