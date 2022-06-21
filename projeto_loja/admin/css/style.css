@@ -27,11 +27,18 @@ body {
     background-repeat: no-repeat;
 }
 
-main{
+main {
     display: flex;
     flex-wrap: nowrap;
     height: 100vh;
     max-height: 100vh;
     overflow-x: auto;
     overflow-y: hidden;
+}
+
+.collapse ul li a,
+.collapsing ul li a {
+    text-transform: none;
+    text-decoration: none;
+    margin-left: 2em;
 }
