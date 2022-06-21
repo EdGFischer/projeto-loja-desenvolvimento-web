@@ -17,24 +17,21 @@ $result = $result->fetch_all(MYSQLI_ASSOC);
     </div>
 
     <div class="bloco-filtro-estoque col-xxl-12 p-2 mb-5 rounded shadow">
-        <form id="formulario_filtro_estoque"
-            class="row gy-2 gx-3 p-4 d-flex flex-row align-items-center justify-items-center">
+        <form id="formulario_filtro_estoque"class="row gy-2 gx-3 p-4 d-flex flex-row align-items-center justify-items-center">
 
             <div class="col-4">
                 <select class="form-select" id="filtro_marca">
                     <option selected>Marca...</option>
-                    <option value="1">Iphone</option>
-                    <option value="2">LG</option>
-                    <option value="3">Samsung</option>
-                    <option value="4">Nokia</option>
+                    <option value="1" name="celular">Celular</option>
+                    <option value="2" name="tablet">Tablet</option>
                 </select>
             </div>
             <div class="col-4">
                 <select class="form-select" id="filtro_cor">
                     <option selected>Cor...</option>
-                    <option value="1">Preto</option>
-                    <option value="2">Branco</option>
-                    <option value="3">Cinza</option>
+                    <?php foreach($result as $linha){ ?>
+                        <option value="<?=$linha['id']?>"><?=$linha['cor']?></option>
+                    <?php } ?>
                 </select>
             </div>
 
@@ -79,7 +76,7 @@ $result = $result->fetch_all(MYSQLI_ASSOC);
                             <p class="card-text">R$: <?php echo $precoProduto ?></p>
                         </div>
 
-                        <a href="#" class="botao-detalhes-produto btn btn-primary">Detalhes</a>
+                        <a href="pagina_produto.php?id=<?php echo $linha['id'];?>" class="botao-detalhes-produto btn btn-primary">Detalhes</a>
                     </div>
                 </div>
             </a>
