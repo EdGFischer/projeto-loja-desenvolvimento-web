@@ -1,14 +1,14 @@
 <?php
 require_once('head.php');
 require_once('topo.php');
-require_once('conexao.php');
+require_once('Classes.php');
 
 $id = $_GET['id'];
+$teste = new comandos();
+$teste->trasProduto($id);
 
 
-$query = "SELECT * FROM teste WHERE id = $id"; // sql para execução
-$result = $conexao->query($query); // executa query
-$result = $result->fetch_all(MYSQLI_ASSOC); 
+
 
 
 ?>

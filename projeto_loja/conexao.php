@@ -1,14 +1,16 @@
 <?php
-$usuario = "root";
-$senha = "";
-$conexao = new mysqli('localhost',$usuario,$senha, 'junintec');
-$conexao->set_charset('utf8');
 
+class Conexao
+{
+    protected $conexao;
 
-
-if ($conexao) {
-    echo'';
-}else{
-    echo'ERRO NO BANCO';
+    function __construct()
+    {
+       $this->conectaBanco();
+    }
+    function conectaBanco()
+    {
+            $this->conectaBanco = new mysqli('localhost','root','', 'junintec');
+            return $this->conectaBanco;
+    }
 }
-
