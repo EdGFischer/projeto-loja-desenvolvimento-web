@@ -1,20 +1,20 @@
 <?php
 
-require_once 'conexao.php';
+require_once 'admin/php/conexao.php';
 
 class comandos extends Conexao
 {
-    public function trasDestaque()
+    public function trazDestaque($str)
     {
         global $result;
-        $query = "SELECT * FROM teste";
+        $query = $str;
         $result = $this->conectaBanco()->query($query);
         $result = $result->fetch_all(MYSQLI_ASSOC);
         return $result;
     }
 
 
-    public function trasProduto($id)
+    public function trazProduto($id)
     {
         global $result;
         $query = "SELECT * FROM teste WHERE id = $id"; // sql para execução

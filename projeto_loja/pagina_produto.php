@@ -1,11 +1,11 @@
 <?php
 require_once('head.php');
 require_once('topo.php');
-require_once('Classes.php');
+require_once('classes.php');
 
 $id = $_GET['id'];
 $teste = new comandos();
-$teste->trasProduto($id);
+$teste->trazProduto($id);
 
 
 

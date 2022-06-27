@@ -1,12 +1,10 @@
 <?php
 require_once('head.php');
 require_once('topo.php');
-require_once('conexao.php');
+require_once('../Classes.php');
 
-$query = "SELECT * FROM teste"; // sql para execução
-$result = $conexao->query($query); // executa query
-$result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
-
+$result = new comandos();
+$result->trazDestaque("SELECT * FROM teste");
 ?>
 
 <section class="d-flex flex-column align-items-center justify-content-center w-100" style="height: 100vh;">
@@ -30,7 +28,7 @@ $result = $result->fetch_all(MYSQLI_ASSOC); // recupera valores de saída;
                         <div class="col-lg-2 d-flex flex-column justify-content-center">R$ <?= $d['preco'] ?></div>
                         <div class="col-lg-2 d-flex flex-column justify-content-center"><?= $d['categoria'] ?></div>
                         <div class="col-lg-1 d-flex flex-row justify-content-center"> <a href="alterar-produto.php?id=<?= $d['id'] ?>" class="btn btn-warning"><i class="fa-solid fa-file-pen"></i></a> </div>
-                        <div class="col-lg-1 d-flex flex-row justify-content-center"> <a href="deletar-produto-get.php?id=<?= $d['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can" style="color:#000"></i></a> </div>
+                        <div class="col-lg-1 d-flex flex-row justify-content-center"> <a href="php/deletar-produto-get.php?id=<?= $d['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can" style="color:#000"></i></a> </div>
                     </li>
                 <?php } ?>
             </ul>

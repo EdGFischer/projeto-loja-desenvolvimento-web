@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Classes.php';
+require_once 'classes.php';
 
 $teste = new comandos();
-$teste->trasDestaque();
+$teste->trazDestaque("SELECT * FROM teste");
 
 ?>
 
